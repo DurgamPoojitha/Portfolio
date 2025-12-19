@@ -7,27 +7,30 @@ import projectSql from "@/assets/project-sql.png";
 const projects = [
   {
     title: "Electron Desktop Shopping Application",
-    description:
-      "A cross-platform desktop shopping application featuring secure user authentication, category-based browsing, real-time cart updates, and QR-based payment support for UPI and card transactions.",
+    description: "...",
     tags: ["HTML", "CSS", "JavaScript", "Electron", "UI/UX Design"],
     color: "from-blue-500/10 to-cyan-500/10",
     image: projectElectron,
+    github: "https://github.com/DurgamPoojitha/Shopping-Website",
+    live: null, // or Netlify / demo link
   },
   {
     title: "Web & Email Phishing Analysis Using NLP",
-    description:
-      "Addresses phishing threats using fine-tuned BERT and DistilBERT models. Deployed as an Explainable AI application on Hugging Face with Captum Integrated Gradients for transparent threat identification.",
+    description: "...",
     tags: ["Machine Learning", "NLP", "Python", "Explainable AI", "Cybersecurity"],
     color: "from-purple-500/10 to-pink-500/10",
     image: projectPhishing,
+    github: "https://github.com/Jaidealistic/phishing-detection",
+    live: "https://huggingface.co/spaces/jaisubi006/phishing_xai",
   },
   {
     title: "Hybrid Rule-ML SQL Injection Detection",
-    description:
-      "Real-time SQL injection detection combining rule-based analysis with ML classifier. Decodes obfuscated payloads and generates visual reports including accuracy, ROC, and confusion matrices.",
+    description: "...",
     tags: ["Cybersecurity", "Feature Engineering", "Python", "Machine Learning"],
     color: "from-emerald-500/10 to-teal-500/10",
     image: projectSql,
+    github: "https://github.com/DurgamPoojitha/SQL-Injection",
+    live: null,
   },
 ];
 
@@ -69,13 +72,32 @@ const ProjectsSection = () => {
                       {project.title}
                     </h3>
                     <div className="flex gap-2">
-                      <Button variant="ghost" size="icon" className="h-8 w-8">
-                        <Github className="w-4 h-4" />
-                      </Button>
-                      <Button variant="ghost" size="icon" className="h-8 w-8">
-                        <ExternalLink className="w-4 h-4" />
-                      </Button>
-                    </div>
+                      {project.github && (
+                       <Button variant="ghost" size="icon" asChild>
+                        <a
+                       href={project.github}
+                        target="_blank"
+                       rel="noopener noreferrer"
+                     aria-label="GitHub Repository"
+                         >
+                       <Github className="w-4 h-4" />
+                    </a>
+                    </Button>
+                  )}
+
+  {project.live && (
+    <Button variant="ghost" size="icon" asChild>
+      <a
+        href={project.live}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Live Demo"
+      >
+        <ExternalLink className="w-4 h-4" />
+      </a>
+    </Button>
+  )}
+</div>
                   </div>
                   <p className="text-body mb-6">
                     {project.description}
