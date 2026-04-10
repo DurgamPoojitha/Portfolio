@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import projectElectron from "@/assets/project-electron.png";
 import projectPhishing from "@/assets/project-phishing.png";
 import projectSql from "@/assets/project-sql.png";
+import projectSense360 from "@/assets/truck.jpeg";
+import projectVotum from "@/assets/Votum.jpeg";
 
 const projects = [
   {
@@ -32,6 +34,24 @@ const projects = [
     github: "https://github.com/DurgamPoojitha/SQL-Injection",
     live: null,
   },
+  {
+    title: "Sense360 - Smart Assistive Wearable",
+    description: "IoT based Smart assistive wearable for sound awareness and directional haptic feedback for hearing impaired users.",
+    tags: ["IoT", "Hardware", "Accessibility", "C++"],
+    color: "from-orange-500/10 to-red-500/10",
+    image: projectSense360,
+    github: "https://github.com/totallynotmanas/sense360",
+    live: null,
+  },
+  {
+    title: "Votum - Secure Electronic Voting System",
+    description: "Secure electronic voting system featuring identity auditing and credential authorization for candidates and voters.",
+    tags: ["Web Development", "Security", "React", "Authentication"],
+    color: "from-blue-500/10 to-indigo-500/10",
+    image: projectVotum,
+    github: "https://github.com/Votum-SecurVote/Votum-admin",
+    live: null,
+  },
 ];
 
 const ProjectsSection = () => {
@@ -48,7 +68,7 @@ const ProjectsSection = () => {
         </div>
 
         <div className="space-y-8">
-{projects.map((project, index) => (
+          {projects.map((project, index) => (
             <div
               key={project.title}
               className={`card-interactive group relative overflow-hidden bg-gradient-to-br ${project.color}`}
@@ -64,7 +84,7 @@ const ProjectsSection = () => {
                     />
                   </div>
                 </div>
-                
+
                 {/* Project Content */}
                 <div className="relative z-10 flex-1">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
@@ -73,31 +93,31 @@ const ProjectsSection = () => {
                     </h3>
                     <div className="flex gap-2">
                       {project.github && (
-                       <Button variant="ghost" size="icon" asChild>
-                        <a
-                       href={project.github}
-                        target="_blank"
-                       rel="noopener noreferrer"
-                     aria-label="GitHub Repository"
-                         >
-                       <Github className="w-4 h-4" />
-                    </a>
-                    </Button>
-                  )}
+                        <Button variant="ghost" size="icon" asChild>
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub Repository"
+                          >
+                            <Github className="w-4 h-4" />
+                          </a>
+                        </Button>
+                      )}
 
-  {project.live && (
-    <Button variant="ghost" size="icon" asChild>
-      <a
-        href={project.live}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Live Demo"
-      >
-        <ExternalLink className="w-4 h-4" />
-      </a>
-    </Button>
-  )}
-</div>
+                      {project.live && (
+                        <Button variant="ghost" size="icon" asChild>
+                          <a
+                            href={project.live}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Live Demo"
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                          </a>
+                        </Button>
+                      )}
+                    </div>
                   </div>
                   <p className="text-body mb-6">
                     {project.description}
