@@ -4,12 +4,7 @@ import profilePhoto from "@/assets/profile-photo.png";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 gradient-hero" />
-      <div className="absolute top-20 right-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl animate-pulse-soft" />
-      <div className="absolute bottom-20 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse-soft" style={{ animationDelay: "1.5s" }} />
-
+    <section className="min-h-screen flex items-center relative">
       <div className="container-narrow relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Content */}
@@ -30,7 +25,7 @@ const HeroSection = () => {
             </p>
 
             <p className="text-body mb-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-              Passionate about building efficient systems and translating complex ideas into practical solutions. 
+              Passionate about building efficient systems and translating complex ideas into practical solutions.
               I thrive in collaborative environments and am driven by continuous learning.
             </p>
 
