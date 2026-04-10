@@ -37,7 +37,7 @@ const projects = [
   {
     title: "Sense360 - Smart Assistive Wearable",
     description: "IoT based Smart assistive wearable for sound awareness and directional haptic feedback for hearing impaired users.",
-    tags: ["IoT", "Hardware", "Accessibility", "C++"],
+    tags: ["IoT", "STM32", "MacroDroid", "Keil", "Embedded C"],
     color: "from-orange-500/10 to-red-500/10",
     image: projectSense360,
     github: "https://github.com/totallynotmanas/sense360",
@@ -46,10 +46,10 @@ const projects = [
   {
     title: "Votum - Secure Electronic Voting System",
     description: "Secure electronic voting system featuring identity auditing and credential authorization for candidates and voters.",
-    tags: ["Web Development", "Security", "React", "Authentication"],
+    tags: ["Spring Boot", "PostgreSQL", "TypeScript", "React", "HTML", "CSS", "JavaScript"],
     color: "from-blue-500/10 to-indigo-500/10",
     image: projectVotum,
-    github: "https://github.com/Votum-SecurVote/Votum-admin",
+    github: "https://github.com/Votum-SecurVote",
     live: null,
   },
 ];
