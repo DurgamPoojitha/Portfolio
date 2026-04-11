@@ -17,12 +17,12 @@ const projects = [
     live: null, // or Netlify / demo link
   },
   {
-    title: "Web & Email Phishing Analysis Using NLP",
-    description: "...",
+    title: "CEREBRO – Enterprise Security Intelligence Platform",
+    description: "Developed an AI-powered SOC platform integrating email threat detection (BERT), URL analysis (DistilBERT), and real-time threat intelligence with explainable AI, enabling accurate and interpretable cybersecurity analysis.",
     tags: ["Machine Learning", "NLP", "Python", "Explainable AI", "Cybersecurity"],
     color: "from-purple-500/10 to-pink-500/10",
     image: projectPhishing,
-    github: "https://github.com/Jaidealistic/phishing-detection",
+    github: "https://github.com/Jaidealistic/CEREBRO",
     live: "https://huggingface.co/spaces/jaisubi006/phishing_xai",
   },
   {
@@ -44,8 +44,8 @@ const projects = [
     live: null,
   },
   {
-    title: "Votum - Secure Electronic Voting System",
-    description: "Secure electronic voting system featuring identity auditing and credential authorization for candidates and voters.",
+    title: "VOTUM – Secure Electronic Voting System",
+    description: "Developed a secure and scalable electronic voting system with modules for voter registration, election management, voting, and result processing. The system incorporates multi-factor authentication (OTP + biometric verification), encrypted vote submission, and role-based access for administrators. It ensures data integrity, voter anonymity, and transparency through audit logging and real-time monitoring dashboards, providing a reliable end-to-end digital voting solution",
     tags: ["Spring Boot", "PostgreSQL", "TypeScript", "React", "HTML", "CSS", "JavaScript"],
     color: "from-blue-500/10 to-indigo-500/10",
     image: projectVotum,
