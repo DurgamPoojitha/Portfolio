@@ -8,8 +8,8 @@ import projectVotum from "@/assets/Votum.jpeg";
 
 const projects = [
   {
-    title: "Electron Desktop Shopping Application",
-    description: "...",
+    title: "Desktop Shopping Application",
+    description: "Designed and developed a desktop-based shopping application using HTML, CSS, JavaScript, and Electron. The application features an intuitive user interface with category-based product browsing, automatic cart updates on product selection, and a QR code–based payment system. It demonstrates seamless user flow from login to checkout, focusing on usability and interactive design.",
     tags: ["HTML", "CSS", "JavaScript", "Electron", "UI/UX Design"],
     color: "from-blue-500/10 to-cyan-500/10",
     image: projectElectron,
@@ -26,8 +26,8 @@ const projects = [
     live: "https://huggingface.co/spaces/jaisubi006/phishing_xai",
   },
   {
-    title: "Hybrid Rule-ML SQL Injection Detection",
-    description: "...",
+    title: "SQL Injection",
+    description: "Developed a lightweight and explainable SQL Injection detection system combining rule-based feature extraction with a Logistic Regression model. The system analyzes query patterns (e.g., SQL keywords, encoding layers, suspicious structures) to accurately classify malicious inputs. It supports real-time payload detection, bulk dataset testing, and auto-generates interactive HTML reports with metrics like ROC, Precision-Recall, and confusion matrix for performance evaluation.",
     tags: ["Cybersecurity", "Feature Engineering", "Python", "Machine Learning"],
     color: "from-emerald-500/10 to-teal-500/10",
     image: projectSql,
@@ -35,8 +35,8 @@ const projects = [
     live: null,
   },
   {
-    title: "Sense360 - Smart Assistive Wearable",
-    description: "IoT based Smart assistive wearable for sound awareness and directional haptic feedback for hearing impaired users.",
+    title: "Sense360 - Assistive Wearable Sound Awareness System",
+    description: "Developed an assistive wearable system using STM32F401, MAX9814 microphones, and ESP8266 to detect surrounding sounds, estimate their intensity and direction, and alert hearing-impaired users through haptic feedback. The system processes multi-microphone input via ADC, transmits data over WiFi, and integrates with mobile automation (MacroDroid) and cloud services to deliver real-time vibration alerts on smartphones and smartwatches.",
     tags: ["IoT", "STM32", "MacroDroid", "Keil", "Embedded C"],
     color: "from-orange-500/10 to-red-500/10",
     image: projectSense360,
