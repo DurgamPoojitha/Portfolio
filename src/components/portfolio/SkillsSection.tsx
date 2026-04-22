@@ -9,6 +9,8 @@ const skillCategories = [
       { name: "Node.js", level: 90 },
       { name: "Express.js", level: 85 },
       { name: "Angular", level: 80 },
+      { name: "Spring Boot", level: 80 },
+      { name: "Flutter", level: 80 },
     ],
   },
   {
@@ -16,6 +18,8 @@ const skillCategories = [
     icon: Code2,
     skills: [
       { name: "Python", level: 95 },
+      { name: "CSS", level: 97 },
+      { name: "TypeScript", level: 90 },
       { name: "JavaScript", level: 87 },
       { name: "C++", level: 85 },
       { name: "Java", level: 80 },
@@ -26,6 +30,7 @@ const skillCategories = [
     icon: Database,
     skills: [
       { name: "MySQL", level: 90 },
+      { name: "PostgreSQL", level: 90 },
       { name: "MongoDB", level: 75 },
     ],
   },
