@@ -6,8 +6,18 @@ import projectSql from "@/assets/project-sql.png";
 import projectSense360 from "@/assets/truck.jpeg";
 import projectVotum from "@/assets/Votum.jpeg";
 import projectEcommerce from "@/assets/ecommerce.png";
+import projectFinanceFlow from "@/assets/financeflow.png";
 
 const projects = [
+  {
+    title: "Finance Flow - Full-Stack Business Intelligence Platform",
+    description: "Engineered a production-ready Business Intelligence (BI) architecture by decoupling raw data ingestion into an automated Python ETL pipeline and an OLAP-style SQLite database. Developed a Python FastAPI backend acting as an analytical engine to compute live KPIs (Savings Rate, ROI) and generate dynamic, anomaly-detecting business insights. Visualized findings through a responsive React & Vite presentation layer using Framer Motion; cloud deployment configuration is currently in progress.",
+    tags: ["Python", "FastAPI", "React", "Vite", "SQLite", "ETL", "Framer Motion"],
+    color: "from-cyan-500/10 to-blue-500/10",
+    image: projectFinanceFlow,
+    github: "https://github.com/DurgamPoojitha/FinanceFlow",
+    live: null,
+  },
   {
     title: "Desktop Shopping Application",
     description: "Designed and developed a desktop-based shopping application using HTML, CSS, JavaScript, and Electron. The application features an intuitive user interface with category-based product browsing, automatic cart updates on product selection, and a QR code–based payment system. It demonstrates seamless user flow from login to checkout, focusing on usability and interactive design.",
