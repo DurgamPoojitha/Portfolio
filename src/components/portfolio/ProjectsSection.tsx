@@ -7,8 +7,18 @@ import projectSense360 from "@/assets/truck.jpeg";
 import projectVotum from "@/assets/Votum.jpeg";
 import projectEcommerce from "@/assets/ecommerce.png";
 import projectFinanceFlow from "@/assets/financeflow.png";
+import projectAIRecruiter from "@/assets/AI Recruiter Assistant.png";
 
 const projects = [
+  {
+    title: "AI Recruiter Assistant - AI-Powered Resume Matching System",
+    description: "Engineered an intelligent Resume-to-Job Matching System by combining advanced Natural Language Processing with a scalable API architecture. Developed a high-performance Python FastAPI backend that processes candidate data and utilizes a Hugging Face Transformer model (MiniLM) to compute precise semantic similarity and extract key competencies. Visualized the AI insights—including match scores, missing skills, and actionable recommendations—through a responsive, Glassmorphism-styled presentation layer and an interactive Streamlit dashboard.",
+    tags: ["Python", "FastAPI", "Hugging Face", "PyTorch", "Scikit-Learn", "HTML/CSS/JS", "Streamlit"],
+    color: "from-amber-500/10 to-orange-500/10",
+    image: projectAIRecruiter,
+    github: "https://github.com/DurgamPoojitha/AI-Recruiter-Assistant",
+    live: null,
+  },
   {
     title: "Finance Flow - Full-Stack Business Intelligence Platform",
     description: "Engineered a production-ready Business Intelligence (BI) architecture by decoupling raw data ingestion into an automated Python ETL pipeline and an OLAP-style SQLite database. Developed a Python FastAPI backend acting as an analytical engine to compute live KPIs (Savings Rate, ROI) and generate dynamic, anomaly-detecting business insights. Visualized findings through a responsive React & Vite presentation layer using Framer Motion; cloud deployment configuration is currently in progress.",
