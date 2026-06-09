@@ -2,6 +2,7 @@ import { Briefcase, GraduationCap, Award, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import wekanOffer from "@/assets/WeKan_Offer_Letter.pdf";
 import innovatiqCert from "@/assets/Innovatiq_Cert.jpeg";
+import mindyatraOffer from "@/assets/Mindyatra-Offer Letter- Poojitha (2).pdf";
 
 const certifications = [
   "Supervised Learning, Advanced Learning Algorithms - Deeplearning.AI Coursera",
@@ -37,6 +38,49 @@ const ExperienceSection = () => {
 
             <div className="border-l-2 border-accent/30 border-opacity-50">
               {/* Current Experience */}
+              <div className="relative pl-8 mb-8">
+                <div className="absolute left-0 top-1 w-4 h-4 -translate-x-[9px] rounded-full bg-accent" />
+                <div className="card-interactive">
+                  <div className="flex flex-wrap items-center gap-2 mb-2">
+                    <span className="text-sm font-medium text-accent">
+                      May 2026 – Present
+                    </span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-foreground mb-1">
+                    Full Stack Developer Intern (Ongoing)
+                  </h4>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    MindYatra.in
+                  </p>
+                  <ul className="text-body text-sm mb-4 list-disc list-inside space-y-1">
+                    <li>Building a mental wellness companion app aligned with the company’s digital wellness platform.</li>
+                    <li>Developing cross-platform mobile applications using React Native (Expo) and backend services using Laravel.</li>
+                    <li>Contributing to feature development, UI implementation, API integration, and debugging.</li>
+                    <li>Collaborating closely with the founding team in a fast-paced startup environment.</li>
+                    <li>Gaining hands-on experience in full stack mobile application development and startup operations.</li>
+                  </ul>
+                  <div className="flex flex-wrap gap-2">
+                    {["React Native", "Expo", "Laravel", "Full Stack"].map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 rounded-full bg-secondary text-xs font-medium text-foreground"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="mt-5 text-left">
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={mindyatraOffer} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        View Offer Letter
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Ongoing Experience */}
               <div className="relative pl-8 mb-8">
                 <div className="absolute left-0 top-1 w-4 h-4 -translate-x-[9px] rounded-full bg-accent" />
                 <div className="card-interactive">
