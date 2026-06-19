@@ -5,8 +5,8 @@ import innovatiqCert from "@/assets/Innovatiq_Cert.jpeg";
 import mindyatraOffer from "@/assets/Mindyatra-Offer Letter- Poojitha (2).pdf";
 
 const certifications = [
-  "Google AI Professional Certificate - Coursera",
-  "Google AI Essentials Certificate - Coursera",
+  "Google AI Professional Certificate - Google",
+  "Google AI Essentials Certificate - Google",
   "Supervised Learning, Advanced Learning Algorithms - Deeplearning.AI Coursera",
   "Business Analysis Fundamentals - Microsoft Coursera",
   "Data For Business Analysts Using Microsoft Excel - Microsoft Coursera",
