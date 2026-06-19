@@ -16,6 +16,8 @@ import cert4 from "@/assets/Coursera AYRB2PYXU3QI.pdf";
 import cert5 from "@/assets/Coursera JMYAG1SG0WZD.pdf";
 import cert6 from "@/assets/Coursera R054WQ1UXC50.pdf";
 import cert7 from "@/assets/Coursera WI3SBS8ARWZI.pdf";
+import cert8 from "@/assets/GoogleAIProfessionalCertificate20260618-31-g7uuah.pdf";
+import cert9 from "@/assets/GoogleAIEssentials_Badge20260616-31-j96x30.pdf";
 
 const certificates = [
     {
@@ -52,6 +54,16 @@ const certificates = [
         title: "Business Analysis Fundamentals",
         issuer: "Coursera (Microsoft)",
         file: cert7,
+    },
+    {
+        title: "Google AI Professional Certificate",
+        issuer: "Google",
+        file: cert8,
+    },
+    {
+        title: "Google AI Essentials Certificate",
+        issuer: "Google",
+        file: cert9,
     },
 ];
 
