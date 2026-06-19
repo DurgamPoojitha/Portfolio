@@ -1,5 +1,6 @@
 import { Download, ExternalLink, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { handleViewFile } from "@/lib/utils";
 import {
     Carousel,
     CarouselContent,
@@ -102,7 +103,7 @@ const CertificatesSection = () => {
                                     </div>
                                     <div className="flex gap-3 mt-auto">
                                         <Button variant="outline" size="sm" className="w-full flex-1" asChild>
-                                            <a href={cert.file} target="_blank" rel="noopener noreferrer">
+                                            <a href="#" onClick={(e) => handleViewFile(e, cert.file)}>
                                                 <ExternalLink className="w-3 h-3 mr-2" />
                                                 View
                                             </a>

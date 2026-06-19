@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import wekanOffer from "@/assets/WeKan_Offer_Letter.pdf";
 import innovatiqCert from "@/assets/Innovatiq_Cert.jpeg";
 import mindyatraOffer from "@/assets/Mindyatra-Offer Letter- Poojitha (2).pdf";
+import { handleViewFile } from "@/lib/utils";
 
 const certifications = [
   "Google AI Professional Certificate - Google",
@@ -73,7 +74,7 @@ const ExperienceSection = () => {
                   </div>
                   <div className="mt-5 text-left">
                     <Button variant="outline" size="sm" asChild>
-                      <a href={mindyatraOffer} target="_blank" rel="noopener noreferrer">
+                      <a href="#" onClick={(e) => handleViewFile(e, mindyatraOffer)}>
                         <ExternalLink className="w-4 h-4 mr-2" />
                         View Offer Letter
                       </a>
@@ -114,7 +115,7 @@ const ExperienceSection = () => {
                   </div>
                   <div className="mt-5 text-left">
                     <Button variant="outline" size="sm" asChild>
-                      <a href={wekanOffer} target="_blank" rel="noopener noreferrer">
+                      <a href="#" onClick={(e) => handleViewFile(e, wekanOffer)}>
                         <ExternalLink className="w-4 h-4 mr-2" />
                         View Offer Letter
                       </a>
@@ -156,7 +157,7 @@ const ExperienceSection = () => {
                   </div>
                   <div className="mt-5 text-left">
                     <Button variant="outline" size="sm" asChild>
-                      <a href={innovatiqCert} target="_blank" rel="noopener noreferrer">
+                      <a href="#" onClick={(e) => handleViewFile(e, innovatiqCert)}>
                         <ExternalLink className="w-4 h-4 mr-2" />
                         View Certificate
                       </a>
