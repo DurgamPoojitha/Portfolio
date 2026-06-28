@@ -46,21 +46,21 @@ const ExperienceSection = () => {
                 <div className="card-interactive">
                   <div className="flex flex-wrap items-center gap-2 mb-2">
                     <span className="text-sm font-medium text-accent">
-                      May 2026 – Present
+                      May 2026 – June 2026
                     </span>
                   </div>
                   <h4 className="text-lg font-semibold text-foreground mb-1">
-                    Full Stack Developer Intern (Ongoing)
+                    Full Stack Developer Intern
                   </h4>
                   <p className="text-sm text-muted-foreground mb-4">
                     MindYatra.in
                   </p>
                   <ul className="text-body text-sm mb-4 list-disc list-inside space-y-1">
-                    <li>Building a mental wellness companion app aligned with the company’s digital wellness platform.</li>
-                    <li>Developing cross-platform mobile applications using React Native (Expo) and backend services using Laravel.</li>
-                    <li>Contributing to feature development, UI implementation, API integration, and debugging.</li>
-                    <li>Collaborating closely with the founding team in a fast-paced startup environment.</li>
-                    <li>Gaining hands-on experience in full stack mobile application development and startup operations.</li>
+                    <li>Built a mental wellness companion app aligned with the company’s digital wellness platform.</li>
+                    <li>Developed cross-platform mobile applications using React Native (Expo) and backend services using Laravel.</li>
+                    <li>Contributed to feature development, UI implementation, API integration, and debugging.</li>
+                    <li>Collaborated closely with the founding team in a fast-paced startup environment.</li>
+                    <li>Gained hands-on experience in full stack mobile application development and startup operations.</li>
                   </ul>
                   <div className="flex flex-wrap gap-2">
                     {["React Native", "Expo", "Laravel", "Full Stack"].map((tech) => (
