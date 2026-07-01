@@ -40,50 +40,7 @@ const ExperienceSection = () => {
             </div>
 
             <div className="border-l-2 border-accent/30 border-opacity-50">
-              {/* Current Experience */}
-              <div className="relative pl-8 mb-8">
-                <div className="absolute left-0 top-1 w-4 h-4 -translate-x-[9px] rounded-full bg-accent" />
-                <div className="card-interactive">
-                  <div className="flex flex-wrap items-center gap-2 mb-2">
-                    <span className="text-sm font-medium text-accent">
-                      May 2026 – June 2026
-                    </span>
-                  </div>
-                  <h4 className="text-lg font-semibold text-foreground mb-1">
-                    Full Stack Developer Intern
-                  </h4>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    MindYatra.in
-                  </p>
-                  <ul className="text-body text-sm mb-4 list-disc list-inside space-y-1">
-                    <li>Built a mental wellness companion app aligned with the company’s digital wellness platform.</li>
-                    <li>Developed cross-platform mobile applications using React Native (Expo) and backend services using Laravel.</li>
-                    <li>Contributed to feature development, UI implementation, API integration, and debugging.</li>
-                    <li>Collaborated closely with the founding team in a fast-paced startup environment.</li>
-                    <li>Gained hands-on experience in full stack mobile application development and startup operations.</li>
-                  </ul>
-                  <div className="flex flex-wrap gap-2">
-                    {["React Native", "Expo", "Laravel", "Full Stack"].map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 rounded-full bg-secondary text-xs font-medium text-foreground"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="mt-5 text-left">
-                    <Button variant="outline" size="sm" asChild>
-                      <a href="#" onClick={(e) => handleViewFile(e, mindyatraOffer)}>
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        View Offer Letter
-                      </a>
-                    </Button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Ongoing Experience */}
+              {/* WeKan - Most Recent / Ongoing */}
               <div className="relative pl-8 mb-8">
                 <div className="absolute left-0 top-1 w-4 h-4 -translate-x-[9px] rounded-full bg-accent" />
                 <div className="card-interactive">
@@ -124,7 +81,50 @@ const ExperienceSection = () => {
                 </div>
               </div>
 
-              {/* Previous Experience */}
+              {/* MindYatra */}
+              <div className="relative pl-8 mb-8">
+                <div className="absolute left-0 top-1 w-4 h-4 -translate-x-[9px] rounded-full bg-accent" />
+                <div className="card-interactive">
+                  <div className="flex flex-wrap items-center gap-2 mb-2">
+                    <span className="text-sm font-medium text-accent">
+                      May 2026 – June 2026
+                    </span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-foreground mb-1">
+                    Full Stack Developer Intern
+                  </h4>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    MindYatra.in
+                  </p>
+                  <ul className="text-body text-sm mb-4 list-disc list-inside space-y-1">
+                    <li>Built a mental wellness companion app aligned with the company's digital wellness platform.</li>
+                    <li>Developed cross-platform mobile applications using React Native (Expo) and backend services using Laravel.</li>
+                    <li>Contributed to feature development, UI implementation, API integration, and debugging.</li>
+                    <li>Collaborated closely with the founding team in a fast-paced startup environment.</li>
+                    <li>Gained hands-on experience in full stack mobile application development and startup operations.</li>
+                  </ul>
+                  <div className="flex flex-wrap gap-2">
+                    {["React Native", "Expo", "Laravel", "Full Stack"].map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 rounded-full bg-secondary text-xs font-medium text-foreground"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="mt-5 text-left">
+                    <Button variant="outline" size="sm" asChild>
+                      <a href="#" onClick={(e) => handleViewFile(e, mindyatraOffer)}>
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        View Offer Letter
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Innovatiq - Oldest */}
               <div className="relative pl-8">
                 <div className="absolute left-0 top-1 w-4 h-4 -translate-x-[9px] rounded-full bg-accent" />
                 <div className="card-interactive">

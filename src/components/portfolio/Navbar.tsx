@@ -11,6 +11,15 @@ const navLinks = [
   { name: "Contact", href: "#contact" },
 ];
 
+const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  e.preventDefault();
+  const id = href.replace("#", "");
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -33,6 +42,7 @@ const Navbar = () => {
       <div className="container-narrow flex items-center justify-between">
         <a
           href="#"
+          onClick={(e) => scrollToSection(e, "#about")}
           className="text-xl font-bold text-foreground tracking-tight hover:text-accent transition-colors"
         >
           Poojitha<span className="text-accent">.</span>
@@ -44,13 +54,14 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
+              onClick={(e) => scrollToSection(e, link.href)}
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all after:duration-300 hover:after:w-full"
             >
               {link.name}
             </a>
           ))}
           <Button variant="accent" size="sm" asChild>
-            <a href="#contact">Get in Touch</a>
+            <a href="#contact" onClick={(e) => scrollToSection(e, "#contact")}>Get in Touch</a>
           </Button>
         </div>
 
@@ -73,14 +84,14 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={(e) => { scrollToSection(e, link.href); setIsMobileMenuOpen(false); }}
                 className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
               >
                 {link.name}
               </a>
             ))}
             <Button variant="accent" asChild className="mt-2">
-              <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <a href="#contact" onClick={(e) => { scrollToSection(e, "#contact"); setIsMobileMenuOpen(false); }}>
                 Get in Touch
               </a>
             </Button>
