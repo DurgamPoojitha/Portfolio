@@ -2,7 +2,7 @@ import { Briefcase, GraduationCap, Award, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import wekanOffer from "@/assets/WeKan_Offer_Letter.pdf";
 import innovatiqCert from "@/assets/Innovatiq_Cert.jpeg";
-import mindyatraOffer from "@/assets/Mindyatra-Offer Letter- Poojitha (2).pdf";
+
 import mindyatraCert from "@/assets/Durgam Poojitha_MindYatra.pdf";
 import { handleViewFile } from "@/lib/utils";
 
@@ -114,13 +114,7 @@ const ExperienceSection = () => {
                       </span>
                     ))}
                   </div>
-                  <div className="mt-5 flex flex-wrap gap-3">
-                    <Button variant="outline" size="sm" asChild>
-                      <a href="#" onClick={(e) => handleViewFile(e, mindyatraOffer)}>
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        View Offer Letter
-                      </a>
-                    </Button>
+                  <div className="mt-5 text-left">
                     <Button variant="outline" size="sm" asChild>
                       <a href="#" onClick={(e) => handleViewFile(e, mindyatraCert)}>
                         <ExternalLink className="w-4 h-4 mr-2" />
